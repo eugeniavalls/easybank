@@ -1,0 +1,19 @@
+.banner {
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+
+  &__picture-container {
+    //dar alto
+  }
+  &__image {
+    position: relative;
+    z-index: -1;
+  }
+
+  &__image-mobile {
+    position: absolute;
+    top: -60px;
+    z-index: -1;
+  }
+}

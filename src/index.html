@@ -17,7 +17,77 @@
     <title>Easybank</title>
   </head>
   <body>
-    <header></header>
+    <header>
+      <div class="header__top">
+        <img src="./assets/images/logo.svg" alt="logo" />
+        <div id="toggle-menu" class="toggle-menu">
+          <img
+            id="menu-icon"
+            src="./assets/images/icon-hamburger.svg"
+            alt="menu"
+          />
+        </div>
+
+        <a class="button button--hide-mobile" href="#">Request Invite</a>
+      </div>
+
+      <nav>
+        <ul class="menu" id="menu">
+          <li class="menu__item">
+            <a class="menu__link" href="#">Home</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">About</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">Contact</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">Blog</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">Careers</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="section">
+      <div class="banner">
+        <div class="banner__picture-container">
+          <picture>
+            <source
+              media="(min-width: 1024px)"
+              srcset="./assets/images/bg-intro-desktop.svg"
+            />
+
+            <source
+              media="(min-width: 360px)"
+              srcset="./assets/images/bg-intro-mobile.svg"
+            />
+
+            <img
+              class="banner__image"
+              src="./assets/images/bg-intro-mobile.svg"
+              alt="bg-mobile"
+            />
+          </picture>
+        </div>
+
+        <h1 class="title">Next generation digital banking</h1>
+        <p class="text">
+          Take your financial life online. Your Easybank account will be a
+          one-stop-shop for spending, saving, budgeting, investing, and much
+          more.
+        </p>
+        <a class="button button--primary" href="#">Request Invite</a>
+        <img
+          class="banner__image-mobile"
+          src="./assets/images/image-mockups.png"
+          alt="mockups"
+        />
+      </div>
+    </section>
     <script type="module" src="./js/index.js"></script>
   </body>
 </html>
