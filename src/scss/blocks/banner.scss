@@ -1,19 +1,51 @@
+@use "../mixins/responsive.scss" as *;
+
 .banner {
   display: flex;
   flex-direction: column;
-  height: 400px;
+  margin-bottom: 165px;
+
 
   &__picture-container {
-    //dar alto
+    height: 400px;
+
+    @include responsive (desktop){
+      height: 200px;
+    }
   }
+
   &__image {
     position: relative;
     z-index: -1;
+
+    @include responsive (desktop){
+      top: -350px;
+      right: -650px;
+      
+    }
   }
 
   &__image-mobile {
     position: absolute;
     top: -60px;
     z-index: -1;
+
+    @include responsive (desktop){
+      right: 0;
+      z-index: 0;
+      right: -110px;
+    }
+  }
+
+  &__texts{
+    padding: 0 24px;
+    text-align: center;
+
+    @include responsive (desktop){
+      margin-top: -100px;
+      text-align: left;
+      padding: 0 165px;
+      width: 60%;
+    }
   }
 }
