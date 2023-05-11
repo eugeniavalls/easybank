@@ -4,12 +4,12 @@
   display: flex;
   flex-direction: column;
   margin-bottom: 165px;
-
+  position: relative;
 
   &__picture-container {
     height: 400px;
 
-    @include responsive (desktop){
+    @include responsive(desktop) {
       height: 200px;
     }
   }
@@ -18,10 +18,9 @@
     position: relative;
     z-index: -1;
 
-    @include responsive (desktop){
+    @include responsive(desktop) {
       top: -350px;
       right: -650px;
-      
     }
   }
 
@@ -30,18 +29,19 @@
     top: -60px;
     z-index: -1;
 
-    @include responsive (desktop){
+    @include responsive(desktop) {
+      top: -280px;
       right: 0;
       z-index: 0;
-      right: -110px;
+      right: -130px;
     }
   }
 
-  &__texts{
+  &__texts {
     padding: 0 24px;
     text-align: center;
 
-    @include responsive (desktop){
+    @include responsive(desktop) {
       margin-top: -100px;
       text-align: left;
       padding: 0 165px;

@@ -2,39 +2,37 @@
 
 @use "../mixins/responsive.scss" as *;
 
-.footer{
-    background-color: var(--color-secundary);
+.footer {
+  background-color: var(--color-secundary);
 
-    &__icons{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 2rem;
-        margin-bottom: 32px;
-
-        @include responsive (desktop){
-            margin-bottom: 0;
-            justify-content: space-between;
-        }
-    }
-
-    &__button{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 1rem;
-
-        @include responsive (desktop){
-            justify-content: center;
-            align-items: end;
-        }
-
-    }
-
-}
-
-.icons{
+  &__icons {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 32px;
+
+    @include responsive(desktop) {
+      margin-bottom: 0;
+      justify-content: space-between;
+    }
+  }
+
+  &__button {
+    display: flex;
+    flex-direction: column;
     align-items: center;
     gap: 1rem;
+
+    @include responsive(desktop) {
+      justify-content: flex-start;
+      align-items: end;
+    }
+  }
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
